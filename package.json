@@ -11,7 +11,7 @@
 		"build": "parcel build index.js",
 		"lint": "prettier --check './*.js'",
 		"test": "npm run lint && jest",
-		"prepublish": "npm run lint && npm run test && npm run build"
+		"prepare": "npm run test && npm run build"
 	},
 	"files": [
 		"index.js"
