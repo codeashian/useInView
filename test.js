@@ -2,17 +2,11 @@ import React from 'react';
 import useInView from '.';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme, {mount} from 'enzyme';
+import {fireEvent} from 'react-testing-library';
+
+import {act, renderHook, render} from 'react-hooks-testing-library';
 
 Enzyme.configure({adapter: new Adapter()});
-
-const TestComponent = () => {
-	const [ref, inView] = useInView(0);
-	return (
-		<div data-inview={inView} ref={ref}>
-			{inView.toString()}
-		</div>
-	);
-};
 
 const setElementTopPos = topValue => {
 	Element.prototype.getBoundingClientRect = jest.fn(() => {
@@ -26,17 +20,21 @@ const setElementTopPos = topValue => {
 		};
 	});
 };
-describe('useInViewHook', () => {
-	let wrapper;
 
-	beforeEach(() => {
-		window.innerHeight = 1000;
-		window.pageYOffset = 0;
-		wrapper = mount(<TestComponent />);
-	});
+const scroll = top => {
+	setElementTopPos(top);
+	fireEvent(window, new Event('scroll'));
+};
 
-	it('should be in view', () => {
-		setElementTopPos(500);
-		expect(wrapper.text()).toBe('true');
-	});
+test('useInView should react on window scroll', () => {
+	let ref, inView;
+	window.clientHeight = 1000;
+	window.pageYOffset = 0;
+	setElementTopPos(200);
+
+	const TestComponent = () => <div ref={ref} />;
+
+	renderHook(() => ([ref, inView] = useInView(0)));
+	act(() => scroll(1300));
+	expect(inView).toBe(false);
 });

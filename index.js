@@ -5,7 +5,6 @@ import throttle from 'lodash.throttle';
 module.exports = (offset = 0) => {
 	const [ref, setRef] = useState(null);
 	const [inView, setInView] = useState(false);
-
 	useEffect(() => {
 		const elementYPos = () => {
 			return (
