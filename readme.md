@@ -2,13 +2,11 @@
 
 >
 
-
 ## Install
 
 ```
-$ npm install <%= moduleName %>
+$ npm install use-in-view
 ```
-
 
 ## Usage
 
@@ -18,7 +16,6 @@ const <%= camelModuleName %> = require('<%= moduleName %>');
 <%= camelModuleName %>('unicorns');
 //=> 'unicorns & rainbows'
 ```
-
 
 ## API
 
@@ -40,7 +37,6 @@ Type: `boolean`<br>
 Default: `false`
 
 Lorem ipsum.
-
 
 ## License
 
