@@ -1,22 +1,39 @@
 {
 	"name": "use-in-view",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "",
 	"license": "MIT",
+	"main": "./dist/index.js",
 	"engines": {
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "jest"
+		"build": "parcel build index.js",
+		"lint": "prettier --check './*.js'",
+		"test": "npm run lint && jest",
+		"prepublish": "npm run lint && npm run test && npm run build"
 	},
 	"files": [
 		"index.js"
 	],
 	"keywords": [
-		""
+		"hooks",
+		"react",
+		"in view",
+		"reveal",
+		"scroll reveal"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/elinadenfina/useInView.git"
+	},
+	"bugs": {
+		"url": "https://github.com/elinadenfina/useInView/issues"
+	},
+	"homepage": "https://github.com/elinadenfina/useInView",
 	"dependencies": {
 		"lodash.throttle": "^4.1.1",
+		"parcel-bundler": "^1.12.3",
 		"react": "^16.8.4",
 		"react-dom": "^16.8.4"
 	},
