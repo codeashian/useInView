@@ -1,6 +1,6 @@
 {
 	"name": "use-in-view",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "",
 	"license": "MIT",
 	"main": "./dist/index.js",
@@ -11,7 +11,7 @@
 		"build": "parcel build index.js",
 		"lint": "prettier --check './*.js'",
 		"test": "npm run lint && jest",
-		"prepare": "yarn version --patch && npm run test && npm run build"
+		"prepare": " npm run test && npm run build && yarn version --patch"
 	},
 	"files": [
 		"index.js"
