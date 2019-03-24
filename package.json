@@ -5,15 +5,15 @@
 	"license": "MIT",
 	"main": "./dist/index.js",
 	"engines": {
-		"node": ">=6"
+		"node": ">=8"
 	},
 	"scripts": {
 		"build": "parcel build index.js",
 		"dev:watch": "parcel examples/index.html --out-dir examples/dist",
+		"deploy": "parcel build examples/index.html --out-dir examples/dist && gh-pages",
 		"lint": "prettier --check './*.js'",
 		"test": "npm run lint && jest",
-		"prepare": " npm run test && npm run build && yarn version --patch",
-		"deploy": "gh-pages -d examples/dist"
+		"prepare": " npm run test && npm run build && yarn version --patch"
 	},
 	"files": [
 		"index.js"
