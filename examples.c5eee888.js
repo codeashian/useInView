@@ -21,4 +21,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{"react":"1n8/","lodash.throttle":"FNy/"}],"Focm":[function(require,module,exports) {
 "use strict";var e=n(require("react")),r=require("react-dom"),t=n(require("../index.js"));function n(e){return e&&e.__esModule?e:{default:e}}function u(e,r){return i(e)||l(e,r)||a()}function a(){throw new TypeError("Invalid attempt to destructure non-iterable instance")}function l(e,r){var t=[],n=!0,u=!1,a=void 0;try{for(var l,i=e[Symbol.iterator]();!(n=(l=i.next()).done)&&(t.push(l.value),!r||t.length!==r);n=!0);}catch(o){u=!0,a=o}finally{try{n||null==i.return||i.return()}finally{if(u)throw a}}return t}function i(e){if(Array.isArray(e))return e}var o=function(){var r=u((0,t.default)(0),2),n=r[0],a=r[1];return e.default.createElement("div",{className:"element -".concat(a&&"inview"),ref:n},"hello")};(0,r.render)(e.default.createElement(o,null),document.getElementById("root"));
 },{"react":"1n8/","react-dom":"NKHc","../index.js":"S3PC"}]},{},["Focm"], null)
-//# sourceMappingURL=/examples.c5eee888.js.map
+//# sourceMappingURL=examples.c5eee888.js.map
