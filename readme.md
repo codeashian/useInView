@@ -13,5 +13,18 @@ $ npm install use-in-view
 ## Usage
 
 ```js
-const useInView = require('use-in-view');
+import useInView from 'use-in-view';
+
+const AnimatedComponent = () => {
+	const [ref, inView] = useInView();
+	
+	return (
+		<div className={`${inView && "in-view"}`} ref={ref} >
+			Animate me! 
+		</div>
+	)
+}
+
 ```
+
+
