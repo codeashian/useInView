@@ -12,7 +12,7 @@ $ yarn add use-in-view
 
 ## Usage
 
-```js
+```jsx
 import useInView from 'use-in-view';
 
 const AnimatedComponent = () => {
