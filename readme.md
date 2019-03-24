@@ -4,6 +4,8 @@
 
 Check if your component is in viewport using this simple hook! 
 
+[Demo](https://elinadenfina.github.io/useInView/)
+
 ## Install
 
 ```
