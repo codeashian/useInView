@@ -17,7 +17,7 @@ import useInView from 'use-in-view';
 
 const AnimatedComponent = () => {
 	const [ref, inView] = useInView();
-	
+
 	return (
 		<div className={`${inView && "in-view"}`} ref={ref} >
 			Animate me! 
