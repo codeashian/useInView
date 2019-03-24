@@ -16,7 +16,7 @@ $ yarn add use-in-view
 import useInView from 'use-in-view';
 
 const AnimatedComponent = () => {
-	const [ref, inView] = useInView();
+    const [ref, inView] = useInView();
 
     return (
         <div className={`${inView && 'in-view'}`} ref={ref}>
