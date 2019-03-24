@@ -20,7 +20,7 @@ const AnimatedComponent = () => {
 
 	return (
 		<div className={`${inView && "in-view"}`} ref={ref} >
-			Animate me! 
+			Animate me when in viewport! 
 		</div>
 	)
 }
