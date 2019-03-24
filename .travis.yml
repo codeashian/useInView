@@ -1,5 +1,16 @@
 language: node_js
+
 node_js:
-  - '10'
-  - '8'
-  - '6'
+    - '4'
+    - '6'
+    - '8'
+
+# Use container-based Travis infrastructure.
+sudo: false
+
+branches:
+    only:
+        - master
+
+before_script:
+    - npm run build
