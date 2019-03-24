@@ -7,7 +7,7 @@ A react hook which makes it easy to check if your component is in the viewport.
 ## Install
 
 ```
-$ npm install use-in-view
+$ yarn add use-in-view
 ```
 
 ## Usage
