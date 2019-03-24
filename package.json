@@ -10,7 +10,7 @@
 	"scripts": {
 		"build": "parcel build index.js",
 		"dev:watch": "parcel examples/index.html --out-dir examples/dist",
-		"deploy": "parcel build examples/index.html --out-dir examples/dist && gh-pages",
+		"deploy": "parcel build examples/index.html --public-url ./ --out-dir examples/dist && gh-pages -d examples/dist",
 		"lint": "prettier --check './*.js'",
 		"test": "npm run lint && jest",
 		"prepare": " npm run test && npm run build && yarn version --patch"
