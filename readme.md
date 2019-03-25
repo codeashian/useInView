@@ -6,8 +6,9 @@ Check if your component is in viewport using this simple hook!
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 ![GitHub top language](https://img.shields.io/github/languages/top/elinadenfina/useinview.svg)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/use-in-view/1.0.7.svg)
+![David](https://img.shields.io/david/elinadenfina/useinview.svg)
 
-[Demo](https://elinadenfina.github.io/useInView/)
+⭐ ⭐ Check out a working [demo](https://elinadenfina.github.io/useInView/)! ⭐ ⭐
 
 ## Install
 
