@@ -8,7 +8,7 @@ Check if your component is in viewport using this simple hook!
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/use-in-view/1.0.7.svg)
 ![David](https://img.shields.io/david/elinadenfina/useinview.svg)
 
-⭐ ⭐ Check out a working [demo](https://elinadenfina.github.io/useInView/)! ⭐ ⭐
+⭐ ⭐ Check out a working demo [here](https://elinadenfina.github.io/useInView/) ⭐ ⭐
 
 ## Install
 
