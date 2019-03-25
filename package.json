@@ -1,6 +1,6 @@
 {
 	"name": "use-in-view",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "",
 	"license": "MIT",
 	"main": "./dist/index.js",
@@ -22,6 +22,7 @@
 		"hooks",
 		"react",
 		"in view",
+		"scroll",
 		"reveal",
 		"scroll reveal"
 	],
@@ -36,7 +37,8 @@
 	"dependencies": {
 		"lodash.throttle": "^4.1.1",
 		"react": "^16.8.4",
-		"react-dom": "^16.8.4"
+		"react-dom": "^16.8.4",
+		"react-highlight": "^0.12.0"
 	},
 	"peerDependencies": {
 		"react": "^16.8.4",
