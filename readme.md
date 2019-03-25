@@ -1,4 +1,4 @@
-## UseInView
+## useInView
 
 Check if your component is in viewport using this simple hook!
 
