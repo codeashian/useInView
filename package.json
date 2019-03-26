@@ -1,6 +1,6 @@
 {
 	"name": "use-in-view",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"description": "",
 	"license": "MIT",
 	"main": "./dist/index.js",
@@ -24,6 +24,11 @@
 		"in view",
 		"scroll",
 		"reveal",
+		"useInView",
+		"inView",
+		"use in view",
+		"in view",
+		"react hooks",
 		"scroll reveal"
 	],
 	"repository": {
@@ -42,9 +47,7 @@
 		"react": "^16.8.4"
 	},
 	"devDependencies": {
-		"react-dom": "^16.8.4",
 		"@babel/cli": "^7.2.3",
-		"styled-components": "^4.2.0",
 		"@babel/core": "^7.4.0",
 		"@babel/plugin-proposal-class-properties": "^7.4.0",
 		"@babel/plugin-transform-runtime": "^7.4.0",
@@ -63,8 +66,10 @@
 		"lint-staged": "^8.1.5",
 		"parcel-bundler": "^1.12.3",
 		"prettier": "^1.16.4",
+		"react-dom": "^16.8.4",
 		"react-hooks-testing-library": "^0.3.8",
-		"react-testing-library": "^6.0.1"
+		"react-testing-library": "^6.0.1",
+		"styled-components": "^4.2.0"
 	},
 	"husky": {
 		"hooks": {
