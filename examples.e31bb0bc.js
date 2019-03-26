@@ -30413,7 +30413,7 @@ var _Footer = _interopRequireDefault(require("./Footer"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tjustify-content: center;\n\tpadding: 20px;\n\talign-items: center;\n\tdisplay: flex;\n\tflex-direction: column;\n\tmax-width: 900px;\n\tmargin: 0 auto;\n\tmargin-bottom: ", ";\n\n\th1 {\n\t\tfont-weight: 800;\n\t}\n\n\t.react-codemirror2 {\n\t\tbox-shadow: 0px 2px 13px 0px #cccccc !important;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tjustify-content: center;\n\tpadding: 20px;\n\talign-items: center;\n\tdisplay: flex;\n\tflex-direction: column;\n\tmax-width: 900px;\n\tmargin: 0 auto;\n\tmargin-bottom: ", ";\n\n\t.iframe-wrapper {\n\t\tmax-width: 100%;\n\t\toverflow: hidden;\n\t\toverflow-x: scroll;\n\t}\n\n\th1 {\n\t\tfont-weight: 800;\n\t}\n\n\t.react-codemirror2 {\n\t\tbox-shadow: 0px 2px 13px 0px #cccccc !important;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -30466,11 +30466,13 @@ var App = function App() {
     className: "octo-body"
   }))), _react.default.createElement(Wrapper, {
     mb: '50vh'
-  }, _react.default.createElement("h1", null, "useInView"), _react.default.createElement("iframe", {
+  }, _react.default.createElement("h1", null, "useInView"), _react.default.createElement("div", {
+    className: "iframe-wrapper"
+  }, _react.default.createElement("iframe", {
     src: "https://carbon.now.sh/embed/?bg=white;&t=one-light&wt=none&l=jsx&ds=true&dsyoff=3px&dsblur=80px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fm=Hack&fs=18px&lh=143%25&si=false&code=import%2520useInView%2520from%2520'use-in-view'%250A%250Aconst%2520AnimatedComponent%2520%253D%2520()%2520%253D%253E%2520%257B%250A%2520%2520const%2520%255Bref%252C%2520inView%255D%2520%253D%2520useInView(50)%250A%250A%2520%2520return%2520(%250A%2520%2520%2520%2520%253Cdiv%2520className%253D%257B%2560%2524%257BinView%2520%2526%2526%2520'in-view'%257D%2560%257D%2520ref%253D%257Bref%257D%253E%250A%2520%2520%2520%2520%2520%2520Animate%2520me!%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520)%250A%257D%250A&es=4x&wm=false",
     style: iframeStyle,
     sandbox: "allow-scripts allow-same-origin"
-  }), _react.default.createElement("h2", null, " \"scroll and you shall find\u201D")), _react.default.createElement(Wrapper, null, _react.default.createElement(_Animated.default, {
+  })), _react.default.createElement("h2", null, " \"scroll and you shall find\u201D")), _react.default.createElement(Wrapper, null, _react.default.createElement(_Animated.default, {
     pos: "flex-start",
     animation: "slideIn"
   }), _react.default.createElement(_Animated.default, {
@@ -30514,7 +30516,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60405" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49291" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
