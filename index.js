@@ -17,7 +17,7 @@ module.exports = (offset = 0) => {
 
 		if (!ref) {
 			return;
-		}
+		} 
 
 		const handleScroll = throttle(() => {
 			if (!ref) {
